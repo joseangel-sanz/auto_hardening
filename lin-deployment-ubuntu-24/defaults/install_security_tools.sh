@@ -6,7 +6,7 @@ SECURITY_TOOLS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 # Bash Menu
 
 PS3="[Select an option from the list:]"
-options=("All" "ds-agent" "falcon-sensor" "qualys-cloud-agent" "5: Quit")
+options=("All" "ds-agent" "falcon-sensor" "qualys-cloud-agent" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in

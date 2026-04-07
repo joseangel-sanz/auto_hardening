@@ -30,8 +30,15 @@
     sleep 1
     break;;
 
+        echo -e "**** Give execute permissions ****\n"
+    sleep 2
+    chmod +x /root/linux_auto_deployment/lin-deployment-*
+    echo $result
+    echo
+    sleep 1
+    break;;
 
-mv lin-deployment-ubuntu-24/ /root/
-chmod +x lin-deployment-ubuntu-24.sh
+
+
 
 
