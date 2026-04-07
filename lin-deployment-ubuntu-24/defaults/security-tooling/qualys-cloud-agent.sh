@@ -3,7 +3,7 @@
 echo "**** qualys-cloud-agent install/configured ****"
 echo
 sleep 5
-sudo dpkg --install /root/lin-deployment-ubuntu-22/files/QualysCloudAgent*.deb
+sudo dpkg --install /root/lin-deployment-ubuntu-24/files/QualysCloudAgent*.deb
 /usr/local/qualys/cloud-agent/bin/qualys-cloud-agent.sh ActivationId=56304d81-63a4-4026-a034-9aba4a961b0b CustomerId=183554fa-0bc8-cb39-837d-10f521fe6a8b
  
 cat <<'EOF' | sudo tee /etc/sysconfig/qualys-cloud-agent

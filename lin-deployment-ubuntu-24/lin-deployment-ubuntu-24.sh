@@ -12,10 +12,10 @@
 
 # Give permission to the entire directory
 
-chmod -R 777 /root/lin-deployment-redhat-8
+chmod -R 777 /root/lin-deployment-ubuntu-24
 
 echo  "--------------------------------------------------------------------------------------------------------------"
-echo  "APMT - APMT Infra L3 Team (RIO Team))- Script v1.0 : RHEL8 Linux Preparation"
+echo  "APMT - APMT HUBs Service Delivery team- Script v1.0 : Ubuntu 24 Deployment"
 echo  "--------------------------------------------------------------------------------------------------------------"
 echo
 echo  "This script will prepare the standard Maersk/APMT OS Linux config"
@@ -46,7 +46,7 @@ do
     
         echo "**** Intalling certs ****"
         echo
-        source /root/lin-deployment-ubuntu-22/defaults/install_certs.sh
+        source /root/lin-deployment-ubuntu-24/defaults/install_certs.sh
         echo -e "Done\n"
         sleep 3
 
@@ -56,7 +56,7 @@ do
 
         echo "**** Intalling pre-requisites ****"
         echo
-        source /root/lin-deployment-ubuntu-22/defaults/other.sh
+        source /root/lin-deployment-ubuntu-24/defaults/other.sh
         echo -e "Done\n"
         sleep 3
 
@@ -66,7 +66,7 @@ do
     
         echo "**** Intalling security tools ****"
         echo
-        source /root/lin-deployment-ubuntu-22/defaults/install_security_tools.sh
+        source /root/lin-deployment-ubuntu-24/defaults/install_security_tools.sh
         echo -e "Done\n"
         sleep 3
         
@@ -76,7 +76,7 @@ do
 
         echo "**** Configuring NTP ****"
         echo
-        source /root/lin-deployment-ubuntu-22/defaults/ntp.sh
+        source /root/lin-deployment-ubuntu-24/defaults/ntp.sh
         echo -e "Done\n"
         sleep 3
 
@@ -86,7 +86,7 @@ do
 
         echo "**** Configuring banners ****"
         echo
-        source /root/lin-deployment-ubuntu-22/defaults/banners.sh
+        source /root/lin-deployment-ubuntu-24/defaults/banners.sh
         echo -e "Done\n"
         sleep 3
 
@@ -98,7 +98,7 @@ do
         #====================================================================================
         echo "**** Subscribing server ****"
         echo
-        source /root/lin-deployment-ubuntu-22/defaults/subscribe.sh
+        source /root/lin-deployment-ubuntu-24/defaults/subscribe.sh
         echo -e "Done\n"
         sleep 3
 
@@ -107,7 +107,7 @@ do
         "3: Install Security tools")
         echo "**** Intalling security tools ****"
         echo
-        source /root/lin-deployment-ubuntu-22/defaults/install_security_tools.sh
+        source /root/lin-deployment-ubuntu-24/defaults/install_security_tools.sh
         echo -e "Done\n"
         sleep 3
 
@@ -129,7 +129,7 @@ do
         "5: Add users")
         echo "**** Adding users ****"
         echo
-        source /root/lin-deployment-ubuntu-22/defaults/users.sh
+        source /root/lin-deployment-ubuntu-24/defaults/users.sh
         echo -e "Done\n"
         sleep 3
         break;;
